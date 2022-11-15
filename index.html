@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://getbootstrap.com//docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30"
+                    height="24" class="d-inline-block align-text-top">
+                Bootstrap
+            </a>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Formulario de clase 11</h3>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre de la imagen</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="url" class="form-label">url</label>
+                            <input type="text" class="form-control" id="url" placeholder="url">
+                        </div>
+                        <div class="mb-3">
+                            <label for="file" class="form-label">Archivo</label>
+                            <input class="form-control form-control-sm" id="file" type="file">
+                        </div>
+                        <div class="mb-3">
+                            <button type="button" class="col-md-12 btn btn-success" onclick="enviardatos()">Enviar
+                                datos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <br>
+        <hr>
+        <div class="row">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="images">                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="file.js"></script>
+</body>
+
+</html>
